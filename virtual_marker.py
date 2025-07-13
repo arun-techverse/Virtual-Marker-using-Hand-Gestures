@@ -22,3 +22,26 @@ def is_index_up(landmarks):
     tip_id = 8
     pip_id = 6
     return landmarks.landmark[tip_id].y < landmarks.landmark[pip_id].y
+
+while True:
+    success, img = cap.read()
+    img = cv2.flip(img, 1)
+    img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+    result = hands.process(img_rgb)
+
+    if result.multi_hand_landmarks:
+        for handLms in result.multi_hand_landmarks:
+            mp_draw.draw_landmarks(img, handLms, mp_hands.HAND_CONNECTIONS)
+
+            lm = handLms.landmark[8]  # Index tip
+            cx, cy = int(lm.x * w), int(lm.y * h)
+
+            if is_index_up(handLms):
+                cv2.circle(img, (cx, cy), 10, draw_color, cv2.FILLED)
+                if xp == 0 and yp == 0:
+                    xp, yp = cx, cy
+                cv2.line(canvas, (xp, yp), (cx, cy), draw_color, brush_thickness)
+                xp, yp = cx, cy
+            else:
+                xp, yp = 0, 0
