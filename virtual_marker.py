@@ -45,3 +45,6 @@ while True:
                 xp, yp = cx, cy
             else:
                 xp, yp = 0, 0
+
+    img_gray = cv2.cvtColor(canvas, cv2.COLOR_BGR2GRAY)
+    
