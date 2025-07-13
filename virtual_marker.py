@@ -64,4 +64,6 @@ while True:
 
 
     key = cv2.waitKey(1) & 0xFF
+    if key == ord('1'):
+        draw_color = (255, 0, 255)  # Purple
     
