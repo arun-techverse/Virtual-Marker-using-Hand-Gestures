@@ -68,4 +68,7 @@ while True:
         draw_color = (255, 0, 255)  # Purple
     elif key == ord('2'):
         draw_color = (0, 255, 0)    # Green
+    elif key == ord('3'):
+        draw_color = (0, 0, 255)    # Red
+    
     
