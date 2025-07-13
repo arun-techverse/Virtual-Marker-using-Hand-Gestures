@@ -53,3 +53,5 @@ while True:
     img = cv2.bitwise_or(img, canvas)
 
     # color button
+    cv2.rectangle(img, (10, 10), (60, 60), (255, 0, 255), cv2.FILLED)
+    
