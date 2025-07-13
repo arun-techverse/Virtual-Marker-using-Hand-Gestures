@@ -9,3 +9,4 @@ mp_draw = mp.solutions.drawing_utils
 
 # Webcam & canvas setup
 cap = cv2.VideoCapture(0)
+ret, frame = cap.read()
