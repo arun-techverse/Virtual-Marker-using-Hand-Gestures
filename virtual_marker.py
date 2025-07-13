@@ -70,5 +70,7 @@ while True:
         draw_color = (0, 255, 0)    # Green
     elif key == ord('3'):
         draw_color = (0, 0, 255)    # Red
+    elif key == ord('c'):
+        canvas = np.zeros((h, w, 3), dtype=np.uint8)
     
     
