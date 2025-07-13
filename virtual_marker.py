@@ -12,3 +12,5 @@ cap = cv2.VideoCapture(0)
 ret, frame = cap.read()
 h, w, _ = frame.shape
 canvas = np.zeros((h, w, 3), dtype=np.uint8)
+
+#color
