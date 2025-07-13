@@ -17,3 +17,8 @@ canvas = np.zeros((h, w, 3), dtype=np.uint8)
 draw_color = (255, 0, 255)  # Default Purple
 brush_thickness = 7
 xp, yp = 0, 0
+
+def is_index_up(landmarks):
+    tip_id = 8
+    pip_id = 6
+    return landmarks.landmark[tip_id].y < landmarks.landmark[pip_id].y
