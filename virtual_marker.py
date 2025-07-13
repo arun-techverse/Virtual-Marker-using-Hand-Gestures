@@ -55,4 +55,4 @@ while True:
     # color button
     cv2.rectangle(img, (10, 10), (60, 60), (255, 0, 255), cv2.FILLED)
     cv2.rectangle(img, (70, 10), (120, 60), (0, 255, 0), cv2.FILLED)
-    
+    cv2.rectangle(img, (130, 10), (180, 60), (0, 0, 255), cv2.FILLED)
