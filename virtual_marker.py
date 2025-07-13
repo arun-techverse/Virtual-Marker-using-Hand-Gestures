@@ -51,3 +51,5 @@ while True:
     img_inv = cv2.cvtColor(img_inv, cv2.COLOR_GRAY2BGR)
     img = cv2.bitwise_and(img, img_inv)
     img = cv2.bitwise_or(img, canvas)
+
+    # color button
