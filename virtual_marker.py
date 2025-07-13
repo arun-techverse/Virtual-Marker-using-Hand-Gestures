@@ -59,3 +59,5 @@ while True:
 
     cv2.putText(img, "1:Purple  2:Green  3:Red", (10, 90), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 2)
     cv2.putText(img, "C:Clear  S:Save  Q:Quit", (10, h - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 2)
+
+    cv2.imshow("Virtual Marker", img)
