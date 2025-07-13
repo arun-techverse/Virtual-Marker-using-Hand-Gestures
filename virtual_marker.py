@@ -72,5 +72,8 @@ while True:
         draw_color = (0, 0, 255)    # Red
     elif key == ord('c'):
         canvas = np.zeros((h, w, 3), dtype=np.uint8)
+    elif key == ord('s'):
+        cv2.imwrite("drawing.png", canvas)
+        print("✅ Drawing saved as drawing.png")
     
     
