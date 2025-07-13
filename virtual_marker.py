@@ -47,4 +47,5 @@ while True:
                 xp, yp = 0, 0
 
     img_gray = cv2.cvtColor(canvas, cv2.COLOR_BGR2GRAY)
+    _, img_inv = cv2.threshold(img_gray, 50, 255, cv2.THRESH_BINARY_INV)
     
