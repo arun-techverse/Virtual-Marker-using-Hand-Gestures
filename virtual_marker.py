@@ -75,5 +75,6 @@ while True:
     elif key == ord('s'):
         cv2.imwrite("drawing.png", canvas)
         print("✅ Drawing saved as drawing.png")
-    
+    elif key == ord('q'):
+        break
     
