@@ -14,7 +14,7 @@ h, w, _ = frame.shape
 canvas = np.zeros((h, w, 3), dtype=np.uint8)
 
 #color
-draw_color = (255, 0, 255)  # Default Purple
+draw_color = (255, 0, 255) 
 brush_thickness = 7
 xp, yp = 0, 0
 
