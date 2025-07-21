@@ -16,13 +16,6 @@ No mouse, no touchscreen — just gestures and real-time magic using **OpenCV** 
 
 ---
 
-## 🎥 Demo
-
-https://github.com/yourusername/virtual-marker-handgestures/assets/demo.gif  
-(*You can upload a GIF or link to a YouTube video demo*)
-
----
-
 ## 🧰 Tech Stack
 
 - 🐍 Python 3.x
@@ -55,8 +48,6 @@ https://github.com/yourusername/virtual-marker-handgestures/assets/demo.gif
 | ✋ Gesture | Index finger up to draw |
 
 ---
-
-## 🧪 Installation
 
 ### 🔧 Requirements
 
